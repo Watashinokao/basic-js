@@ -15,7 +15,6 @@ function deleteDigit(n) {
   const arr = [];
   const str = String(n);
   for (let i = 0; i < str.length; i += 1) {
-    console.log(i);
     arr.push(str.replace(str[i], ""));
   }
   return Number(arr.sort((a, b) => a - b)[arr.length - 1]);
